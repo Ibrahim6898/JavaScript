@@ -78,3 +78,41 @@ console.log(myStr2)
 
 var myName = "My name is " + "Ibrahim"
 console.log(myName)
+
+var myName = "Yusuf"
+var myStr = "My name is " + myName + " and I am well"
+console.log(myStr)
+
+var a = "worthwhile"
+var b = "learning to code is "
+b += a
+console.log(b)
+
+var firstNameLength = 0
+var firstName = "Ada"
+
+firstNameLength = firstName.length
+console.log(firstNameLength.length)
+
+var fun = "Communication"
+console.log(fun[1])
+
+console.log("hello")
+
+function example(){
+    console.log("line one")
+    console.log("line two")
+    console.log("line three")
+
+}
+example()
+
+function getTotal(a, b){
+    return a + b
+}
+
+var num1 = 2
+var num2 = 1
+
+var total = getTotal(num1, num2)
+console.log(total)
