@@ -116,3 +116,19 @@ var num2 = 1
 
 var total = getTotal(num1, num2)
 console.log(total)
+
+function nodefparam(number = 10){
+    console.log("Result: ", number * number)
+}
+nodefparam()
+
+function greet(name){
+    if (name === undefined){
+        name = "World!"
+    }
+    console.log("Hello:", name)
+}
+greet()
+greet("Musa")
+
+
