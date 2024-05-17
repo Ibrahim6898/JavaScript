@@ -186,3 +186,61 @@ yuyu.makeSound()
 console.log(polly.color)
 console.log(polly.energy)
 polly.isActive()
+
+class Cake {
+    constructor(lyr){
+        this.layer = lyr + 1
+    }
+}
+let result = new Cake(1)
+console.log(result.layer)
+
+class Animals{
+    
+}
+class Cup extends Animals {
+    constructor() {
+        super()
+        this.noise = "meow"
+    }
+}
+let results = new Animals()
+console.log(results.noise)
+
+class People {
+    sayHello() {
+        console.log("Hello")
+    }
+}
+
+class Friend extends People {
+    sayHello(){
+        console.log("Hey")
+}
+}
+
+let output = new Friend()
+output.sayHello()
+
+
+let {PI} = Math
+console.log(PI)
+
+PI === Math.PI
+
+const array1 = ['a', 'b', 'c', 'd']
+for (const element of array1){
+    console.log(element)
+}
+
+const car3 = {
+    speed: 400,
+    color: 'Yellow'
+}
+console.log(Object.values(car3))
+
+const car4 = {
+    speed: 300,
+    color: 'magenta'
+}
+console.log(Object.entries(car4))
