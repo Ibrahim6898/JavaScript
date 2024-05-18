@@ -332,3 +332,50 @@ showItenarary(top3[0], top3[1], top3[2])
 showItenarary(...top4)
 
 showItenarary(...top3)
+
+
+//Rest Operator
+function sumAll(...numbers){
+    let total = 0;
+    for( const num of numbers) {
+        total += num;
+    }
+    return total;
+}
+const aresult = sumAll(1, 2, 3, 4, 5);
+console.log(aresult);
+
+//Rest operation using Destructuring
+const top7 = [
+    "Adamawa",
+    "Gombe",
+    "Bauchi",
+    "Taraba",
+    "Yobe",
+    "Borno",
+    "Jigawa"
+]
+
+const [] = top7;
+const [first, second, third, ...secondVisit] = top7;
+console.log(top7)
+
+//Concatenate arrays using rest operation
+const fruit = ["Apple", "Pear", "Plum"]
+const berries = ["Blueberries", "Strawberries"]
+const fruitsAndBerries = [...fruit, ...berries]
+console.log(fruitsAndBerries)
+
+//Add new members to arrays without using the push() method
+let veggy = ["onion", "parsley"]
+veggy = [...veggy, "carrot", "beetroot"]
+console.log(veggy)
+
+//Convert a string to an array using the string operator
+const greeting = "Hello";
+const arrayOfChars = [...greeting];
+console.log(arrayOfChars)
+
+const meal = ["soup", "steak", "ice cream"]
+let [starter] = meal; //meal array destructured and the first elemnt is assigned to a variable named "starter"
+console.log(starter);
