@@ -272,3 +272,63 @@ function testBracketsDynamicAccess() {
       console.log(drone[dynamicKey]);
   }
   testBracketsDynamicAccess();
+
+  // Template literals
+  let  greet = 'hello'
+  let place = 'World'
+  console.log(`${greet} ${place}`)
+
+  let car = `Audi
+  ferrari
+  Buggati
+      Lamborghini`
+  console.log(car)
+
+  //Array Mehods
+  //forEach()
+  const fruits = ['kiwi','mango','apple','pear'];
+function appendIndex(fruit, index) {
+    console.log(`${index}. ${fruit}`)
+}
+fruits.forEach(appendIndex);
+
+const veggies = ['onion', 'garlic', 'potato'];
+veggies.forEach( function(veggie, index) {
+    console.log(`${index}. ${veggie}`);
+});
+
+//filter()
+// newArray  = originalArray.filter(function(currentValue, index, arr){
+//     return true
+//     return false
+// })
+
+// const nums = [0,10,20,30,40,50];
+// nums.filter( function(num) {
+//     return num > 20;
+// })
+// console.log(nums)
+
+//Spread Operator
+let top3 = [
+    "the Eko Atlanta",
+    "Abuja",
+    "the Kano City"
+]
+
+let top4 = [
+    "the Abia fall",
+    "Zuma rock",
+    "the Kano Museum"
+]
+
+function showItenarary(place1, place2, place3){
+    console.log("Visit " + place1)
+    console.log("Then visit " + place2)
+    console.log("Finish with a visit to " + place3)
+}
+showItenarary(top3[0], top3[1], top3[2])
+
+showItenarary(...top4)
+
+showItenarary(...top3)
