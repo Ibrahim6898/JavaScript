@@ -16,4 +16,4 @@ function handleClicks() {
             break;
     }
 }
-h1.addEventListener('click', handleClicks)
+h1.addEventListener('click', handleClicks)  
